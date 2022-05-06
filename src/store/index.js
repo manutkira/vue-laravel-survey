@@ -1,4 +1,3 @@
-import { defaultTo } from "lodash";
 import { createStore } from "vuex";
 import axiosClient from "../axios";
 
@@ -21,14 +20,14 @@ const tmpSurveys = [
         type: "textarea",
         question: "What do think about coding",
         description: "write you thought with your honest opinion.",
-        data: {}
+        data: {},
       },
       {
         id: 2,
         type: "text",
         question: "What is your favorite color",
         description: null,
-        data: {}
+        data: {},
       },
       {
         id: 3,
@@ -39,22 +38,22 @@ const tmpSurveys = [
           options: [
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97b",
-              text: "USA"
+              text: "USA",
             },
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97c",
-              text: "Cambodia"
+              text: "Cambodia",
             },
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97d",
-              text: "China"
+              text: "China",
             },
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97e",
-              text: "India"
-            }
-          ]
-        }
+              text: "India",
+            },
+          ],
+        },
       },
       {
         id: 3,
@@ -65,24 +64,24 @@ const tmpSurveys = [
           options: [
             {
               uuid: "a17535ec-e40b-4dda-b8cd-a3dc22f9e97b",
-              text: "java"
+              text: "java",
             },
             {
               uuid: "b17535ec-e40b-4dda-b8cd-a3dc22f9e97c",
-              text: "vuejs"
+              text: "vuejs",
             },
             {
               uuid: "d17535ec-e40b-4dda-b8cd-a3dc22f9e97d",
-              text: "react"
+              text: "react",
             },
             {
               uuid: "r17535ec-e40b-4dda-b8cd-a3dc22f9e97e",
-              text: "angular"
-            }
-          ]
-        }
-      }
-    ]
+              text: "angular",
+            },
+          ],
+        },
+      },
+    ],
   },
   {
     id: 200,
@@ -102,14 +101,14 @@ const tmpSurveys = [
         type: "textarea",
         question: "What do think about coding",
         description: "write you thought with your honest opinion.",
-        data: {}
+        data: {},
       },
       {
         id: 2,
         type: "text",
         question: "What is your favorite color",
         description: null,
-        data: {}
+        data: {},
       },
       {
         id: 3,
@@ -120,22 +119,22 @@ const tmpSurveys = [
           options: [
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97b",
-              text: "USA"
+              text: "USA",
             },
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97c",
-              text: "Cambodia"
+              text: "Cambodia",
             },
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97d",
-              text: "China"
+              text: "China",
             },
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97e",
-              text: "India"
-            }
-          ]
-        }
+              text: "India",
+            },
+          ],
+        },
       },
       {
         id: 3,
@@ -146,24 +145,24 @@ const tmpSurveys = [
           options: [
             {
               uuid: "a17535ec-e40b-4dda-b8cd-a3dc22f9e97b",
-              text: "java"
+              text: "java",
             },
             {
               uuid: "b17535ec-e40b-4dda-b8cd-a3dc22f9e97c",
-              text: "vuejs"
+              text: "vuejs",
             },
             {
               uuid: "d17535ec-e40b-4dda-b8cd-a3dc22f9e97d",
-              text: "react"
+              text: "react",
             },
             {
               uuid: "r17535ec-e40b-4dda-b8cd-a3dc22f9e97e",
-              text: "angular"
-            }
-          ]
-        }
-      }
-    ]
+              text: "angular",
+            },
+          ],
+        },
+      },
+    ],
   },
   {
     id: 300,
@@ -183,14 +182,14 @@ const tmpSurveys = [
         type: "textarea",
         question: "What do think about coding",
         description: "write you thought with your honest opinion.",
-        data: {}
+        data: {},
       },
       {
         id: 2,
         type: "text",
         question: "What is your favorite color",
         description: null,
-        data: {}
+        data: {},
       },
       {
         id: 3,
@@ -201,22 +200,22 @@ const tmpSurveys = [
           options: [
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97b",
-              text: "USA"
+              text: "USA",
             },
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97c",
-              text: "Cambodia"
+              text: "Cambodia",
             },
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97d",
-              text: "China"
+              text: "China",
             },
             {
               uuid: "c17535ec-e40b-4dda-b8cd-a3dc22f9e97e",
-              text: "India"
-            }
-          ]
-        }
+              text: "India",
+            },
+          ],
+        },
       },
       {
         id: 3,
@@ -227,24 +226,24 @@ const tmpSurveys = [
           options: [
             {
               uuid: "a17535ec-e40b-4dda-b8cd-a3dc22f9e97b",
-              text: "java"
+              text: "java",
             },
             {
               uuid: "b17535ec-e40b-4dda-b8cd-a3dc22f9e97c",
-              text: "vuejs"
+              text: "vuejs",
             },
             {
               uuid: "d17535ec-e40b-4dda-b8cd-a3dc22f9e97d",
-              text: "react"
+              text: "react",
             },
             {
               uuid: "r17535ec-e40b-4dda-b8cd-a3dc22f9e97e",
-              text: "angular"
-            }
-          ]
-        }
-      }
-    ]
+              text: "angular",
+            },
+          ],
+        },
+      },
+    ],
   },
   {
     id: 400,
@@ -258,8 +257,8 @@ const tmpSurveys = [
     created_at: "2021-12-20 18:00:00",
     updated_at: "2021-12-20 18:00:00",
     expire_date: "2021-12-31 18:00:00",
-    questions: []
-  }
+    questions: [],
+  },
 ];
 
 const store = createStore({
@@ -268,8 +267,8 @@ const store = createStore({
     questionTypes: ["text", "select", "radio", "checkbox", "textarea"],
     user: {
       data: {},
-      token: sessionStorage.getItem("TOKEN")
-    }
+      token: sessionStorage.getItem("TOKEN"),
+    },
   },
   getters: {},
   actions: {
@@ -277,12 +276,12 @@ const store = createStore({
       delete survey.image_url;
       let res;
       if (survey.id) {
-        res = axiosClient.put(`/survey/${survey.id}`, survey).then(res => {
+        res = axiosClient.put(`/survey/${survey.id}`, survey).then((res) => {
           commit("updateSurvey", res.data);
           return res;
         });
       } else {
-        res = axiosClient.post("/survey", survey).then(res => {
+        res = axiosClient.post("/survey", survey).then((res) => {
           commit("saveSurvey", res.data);
           return res;
         });
@@ -302,25 +301,25 @@ const store = createStore({
       });
     },
     logout({ commit }) {
-      return axiosClient.post("/logout").then(res => {
+      return axiosClient.post("/logout").then((res) => {
         commit("logout");
         return res;
       });
-    }
+    },
   },
   mutations: {
     saveSurvey: (state, survey) => {
       state.surveys = [...state.surveys, survey.data];
     },
     updateSurvey: (state, survey) => {
-      state.surveys = state.surveys.map(s => {
+      state.surveys = state.surveys.map((s) => {
         if (s.id == survey.data.id) {
           return survey.data;
         }
         return s;
       });
     },
-    logout: state => {
+    logout: (state) => {
       state.user.data = {};
       state.user.token = null;
       sessionStorage.removeItem("TOKEN");
@@ -329,9 +328,9 @@ const store = createStore({
       state.user.token = userData.token;
       state.user.data = userData.user;
       sessionStorage.setItem("TOKEN", userData.token);
-    }
+    },
   },
-  modules: {}
+  modules: {},
 });
 
 export default store;
